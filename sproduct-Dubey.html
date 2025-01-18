@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>Products - Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cake photos\logo.jpeg" alt="Cake Shop Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About us</a>
+	    <a href="cart.html">Cart</a>
+            <a href="custom.html">Special Order</a>
+	    <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+	<prodetails class="section-p1">
+	<div class="single-pro-image">
+		<img src="cake photos\Choco Crackle.jpg" width="100%" id="MainImg"  alt="Choco Crackle">
+	</div>
+	<div class="single-pro-details">
+		<h6>Home</h6>
+		<h4>Choco Crackle</h4>
+		<h2>$:350</h2>
+		<select>
+		<option>Weight</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		</select>
+		<input type="number" value="1">
+		<button class="normal" onclick="addToCart(2,'Choco Crackle',350)">Add to Cart</button>
+		<h4>Product Details</h4>
+<span>The Choco Crackle Cake combines a velvety smooth chocolate sponge with layers of creamy chocolate ganache. It is accented with a touch of espresso, enhancing the deep chocolate notes and adding a subtle complexity to each bite. The cake’s signature feature is its crispy chocolate topping, which provides a delightful contrast to the soft, moist interior.</span>
+	</div>
+	</prodetails>
+	<product1 class="section-p1">
+		<h2>Similars</h2>
+		<p>We Have different types of flavour & Cakes</p>
+		<div class="pro-container">
+
+			<div class="pro" onclick="window.location.href='Dark Loaded.html';">
+			<img src="cake photos\Dark Loaded.jpg" alt="Dark Loaded">
+			<div class="des">
+				<span>Chocolate</span>
+				<h5>Dark Loaded</h5>
+				<h4>$:450</h4>
+			</div>
+				<button="Shop"><b>Shop</b></button>
+			</div>
+
+			<div class="pro" onclick="window.location.href='sproduct.html';">
+			<img src="cake photos\Choco Crackle.jpg" alt="Choco Crackle">
+			<div class="des">
+				<span>flavour</span>
+				<h5>Choco Crackle</h5>
+				<h4>$:350</h4>
+			</div>
+				<button="Shop"><b>Shop</b></button>
+			</div>
+
+			<div class="pro" onclick="window.location.href='pineapple.html';">
+			<img src="cake photos\pineapple.jpg" alt="pineapple">
+			<div class="des">
+				<span>flavour</span>
+				<h5>Pineapple Cake</h5>
+				<h4>$:300</h4>
+			</div>
+				<button="Shop"><b>Shop</b></button>
+			</div>
+			<div class="pro">
+			<img src="cake photos\Dark Loaded.jpg" alt="Dark Loaded">
+			<div class="des">
+				<span>Chocolate</span>
+				<h5>Dark Loaded</h5>
+				<h4>$:450</h4>
+			</div>
+				<button="Shop"><b>Shop</b></button>
+			</div>
+	<!-- Newsletter Signup Section -->
+	<div class="newsletter section-p1 section-m1">
+		<div class="newstext">
+		    <h4>Sign Up For Full Access</h4>
+		    <p>Get email updates about our latest shop and <span>Special Offers</span>.</p>
+		</div>
+		<div class="form">
+		    <input type="text" placeholder="Your Email Address">
+		    <button class="normal">Sign Up</button>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="section-p1">
+		<div class="col">
+		    <img src="cake photos\logo.jpeg" width="100px" height="100px" alt="Cake Shop Logo">
+		    <h4>Contact</h4>
+		    <p><strong>Address:</strong> Virar West, near Viva College</p>
+		    <p><strong>Phone:</strong> +01 2222 333 444</p>
+		    <p><strong>Open Hours:</strong> 24/7</p>
+		</div>
+		<div class="follow">
+		    <h4>Follow Us</h4>
+		    <img src="cake photos\follow.jpeg" width="200px" height="50px" alt="Social Media">
+		    <div class="icon">
+		        <i class="fab fa-facebook-f"></i>
+		        <i class="fab fa-twitter"></i>
+		        <i class="fab fa-instagram"></i>
+		        <i class="fab fa-pinterest-p"></i>
+		        <i class="fab fa-youtube"></i>
+		    </div>
+		</div>
+        <p>&copy; 2024 Sweet Bites. All rights reserved.</p>
+		</div>
+	</div>
+	</div>
+	</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

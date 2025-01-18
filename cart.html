@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Cart - Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cake photos\logo.jpeg" alt="Cake Shop Logo">
+        </div>
+        <nav>
+            <h3>Sweet Bites</h3>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About us</a>
+            <a class="active" href="cart.html">Cart</a>
+            <a href="custom.html">Special Order</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+ <h2>Your Cart</h2>
+    <div class="cart">
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <!-- Cart items will be dynamically injected here -->
+            </tbody>
+        </table>
+        <h3>Total: $<span id="cartTotal">0</span></h3>
+        <button class="normal" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+
+    <!-- Checkout Section -->
+	<h2>Checkout</h2>
+    <div class="checkout" id="checkoutPage">
+        <form id="checkoutForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            <span class="error" id="phoneError"></span>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+            <span class="error" id="addressError"></span><br>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" required>
+                <option value="" disabled selected>Select a payment method</option>
+                <option value="Credit Card">Credit Card</option>
+		<option value="Cash On Delivery">Cash On Delivery</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+            </select>
+            <span class="error" id="paymentError"></span>
+
+            <h3>Total Amount: $<span id="checkoutTotal"></span></h3>
+
+            <button class="normal">Complete Purchase</button>
+        </form>
+    </div>
+	<div class="newsletter section-p1 section-m1">
+		<div class="newstext">
+		    <h4>Sign Up For Full Access</h4>
+		    <p>Get email updates about our latest shop and <span>Special Offers</span>.</p>
+		</div>
+		<div class="form">
+		    <input type="text" placeholder="Your Email Address">
+		    <button class="normal">Sign Up</button>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="section-p1">
+		<div class="col">
+		    <img src="cake photos\logo.jpeg" width="100px" height="100px" alt="Cake Shop Logo">
+		    <h4>Contact</h4>
+		    <p><strong>Address:</strong> Virar West, near Viva College</p>
+		    <p><strong>Phone:</strong> +01 2222 333 444</p>
+		    <p><strong>Open Hours:</strong> 24/7</p>
+		</div>
+		<div class="follow">
+		    <h4>Follow Us</h4>
+		    <img src="cake photos\follow.jpeg" width="200px" height="50px" alt="Social Media">
+		    <div class="icon">
+		        <i class="fab fa-facebook-f"></i>
+		        <i class="fab fa-twitter"></i>
+		        <i class="fab fa-instagram"></i>
+		        <i class="fab fa-pinterest-p"></i>
+		        <i class="fab fa-youtube"></i>
+		    </div>
+		</div>
+        <p>&copy; 2024 Sweet Bites. All rights reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
