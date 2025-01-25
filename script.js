@@ -138,3 +138,46 @@ function completePurchase() {
     updateCart();
     location.reload();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.star');
+    const feedback = document.getElementById('feedback');
+
+    stars.forEach(star => {
+        star.addEventListener('mouseover', handleHover);
+        star.addEventListener('click', handleClick);
+    });
+
+    function handleHover(event) {
+        const starValue = event.target.dataset.value;
+        stars.forEach(star => {
+            star.classList.remove('selected');
+            if (star.dataset.value <= starValue) {
+                star.classList.add('selected');
+            }
+        });
+    }
+/* Rating Experince*/
+    function handleClick(event) {
+        const starValue = event.target.dataset.value;
+        feedback.textContent = `You rated us ${starValue} star(s). Thank you for your feedback!`;
+        
+        // Submit the feedback using fetch or AJAX
+        // Replace 'your-server-endpoint' with your actual server endpoint
+        fetch('your-server-endpoint', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ rating: starValue })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Feedback submitted successfully:', data);
+        })
+        .catch(error => {
+            console.error('Error submitting feedback:', error);
+        });
+    }
+});
+

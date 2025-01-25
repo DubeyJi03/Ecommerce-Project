@@ -1840,6 +1840,46 @@ form-details .people div p span{
     font-weight: 600;
     color: #000;
 }
+form-details .people div p a{
+    color: #088178;
+}
+form-details .people div p a:hover{
+    text-decoration: underline;
+}
+/*Rating website*/
+
+
+        /* Container for the rating system */
+        .rating-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styles for the stars */
+        .stars {
+            display: flex;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .star {
+            font-size: 2rem;
+            color: #ccc;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .star:hover, .star.selected {
+            color: #ff9800;
+            transform: scale(1.2);
+        }
+
+        .feedback {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
 /* Cart Section */
 .cart {
     background-color: #fff; /* White background for contrast */
